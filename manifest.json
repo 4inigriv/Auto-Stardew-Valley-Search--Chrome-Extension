@@ -1,19 +1,23 @@
 {
-    "manifest_version": 3,
-    "name": "Auto Stardew Valley Search",
-    "version": "1.0",
-    "permissions": ["activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["*://www.google.com/*"],
-        "js": ["content_script.js"]
-      }
-    ],
-    "action": {
-      "default_popup": "popup.html"
+  "manifest_version": 3,
+  "name": "Auto Stardew Valley Search",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/*"],
+      "js": ["content_script.js"]
     }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
-  
+}
